@@ -16,7 +16,7 @@ import android.support.v7.app.ActionBar;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.tencent.bugly.beta.Beta;
+//import com.tencent.bugly.beta.Beta;
 
 import net.lightbody.bmp.BrowserMobProxy;
 import net.lightbody.bmp.proxy.dns.AdvancedHostResolver;
@@ -95,7 +95,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity implements Pre
             @Override
             public boolean onPreferenceClick(Preference preference) {
                 try {
-                    Beta.checkUpgrade();
+                    //Beta.checkUpgrade();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

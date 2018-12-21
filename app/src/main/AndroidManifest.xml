@@ -28,19 +28,19 @@
         android:theme="@style/AppTheme">
 
         <!-- 配置APP ID -->
-        <meta-data
+        <!--<meta-data
             android:name="BUGLY_APPID"
             android:value="db9f598223" />
 
-        <!-- 配置Bugly调试模式（true或者false）-->
+        &lt;!&ndash; 配置Bugly调试模式（true或者false）&ndash;&gt;
         <meta-data
             android:name="BUGLY_ENABLE_DEBUG"
             android:value="false" />
 
-        <!-- 配置APP渠道号 -->
+        &lt;!&ndash; 配置APP渠道号 &ndash;&gt;
         <meta-data
             android:name="BUGLY_APP_CHANNEL"
-            android:value="Github" />
+            android:value="Github" />-->
 
         <activity
             android:name=".Activity.MainActivity"
@@ -108,9 +108,9 @@
             android:name=".Activity.HarDetailActivity" />
         <activity
             android:name=".Activity.JsonPreviewActivity" />
-        <activity
+        <!--<activity
             android:name="com.tencent.bugly.beta.ui.BetaActivity"
-            android:theme="@android:style/Theme.Translucent" />
+            android:theme="@android:style/Theme.Translucent" />-->
         <activity android:name=".Activity.ChangeFilterActivity"></activity>
     </application>
 

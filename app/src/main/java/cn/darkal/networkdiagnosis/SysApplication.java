@@ -6,7 +6,7 @@ import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.support.multidex.MultiDexApplication;
 import android.util.Log;
-import com.tencent.bugly.Bugly;
+//import com.tencent.bugly.Bugly;
 import net.gotev.uploadservice.UploadService;
 import net.lightbody.bmp.BrowserMobProxy;
 import net.lightbody.bmp.BrowserMobProxyServer;
@@ -44,7 +44,7 @@ public class SysApplication extends MultiDexApplication {
         // Gradle automatically generates proper variable as below.
         UploadService.NAMESPACE = BuildConfig.APPLICATION_ID;
 
-        Bugly.init(getApplicationContext(), "db9f598223", false);
+        //Bugly.init(getApplicationContext(), "db9f598223", false);
     }
 
     public void initProxy() {

@@ -49,7 +49,7 @@ import com.bumptech.glide.Glide;
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
 import com.google.zxing.QrCodeScanActivity;
-import com.tencent.bugly.crashreport.CrashReport;
+//import com.tencent.bugly.crashreport.CrashReport;
 
 import net.gotev.uploadservice.ServerResponse;
 import net.gotev.uploadservice.UploadInfo;
@@ -692,7 +692,7 @@ public class MainActivity extends AppCompatActivity implements BackHandledInterf
                                     Snackbar.make(rootView, "HAR文件保存失败", Snackbar.LENGTH_LONG).setAction("Action", null).show();
                                 }
                             });
-                            CrashReport.postCatchedException(e);
+                            //CrashReport.postCatchedException(e);
                             e.printStackTrace();
                         } finally {
                             dismissLoading();
@@ -736,7 +736,7 @@ public class MainActivity extends AppCompatActivity implements BackHandledInterf
             dismissLoading();
             Snackbar.make(rootView, "上传失败！", Snackbar.LENGTH_LONG).setAction("Action", null).show();
             exception.printStackTrace();
-            CrashReport.postCatchedException(exception);
+            //CrashReport.postCatchedException(exception);
         }
 
         @Override
